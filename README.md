@@ -45,3 +45,20 @@ These are the key goals and expectations of first-time users visiting the JavaSc
 
 -  **Simple Navigation**  
   I want the site to be easy to use and simple to move around.
+
+## 2. Design <a name="design"></a>
+### 2.1. Colour Scheme <a name="colour-scheme"></a>
+I chose a simple and limited colour palette to avoid overwhelming users
+I have used #fff & #ffff as the primary and secondary colours used for background color.
+I have used #0075ff  submit button, spans and correct answer.
+
+### 2.2. Typography <a name="typography"></a>
+### 2.3. Imagery <a name="imagery"></a>
+### 2.4. Wireframes <a name="wireframes"></a>
+### 2.5. Features <a name="features"></a>
+- **The Home Page** <a name="the-home-page"></a>  
+- **The Game Page** <a name="the-game-page"></a>  
+- **The High Scores Page** <a name="the-high-scores-page"></a>  
+- **The 404 Error Page** <a name="the-404-error-page"></a>  
+- **Future Implementations** <a name="future-implementations"></a>  
+### 2.6. Accessibility <a name="accessibility"></a>
