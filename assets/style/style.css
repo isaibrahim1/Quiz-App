@@ -1,5 +1,11 @@
 
 
+:root {
+    --hue-aetral: 210;
+    --heu-wrong: 0;
+    --heu-correct: 145;
+}
+
 body {
     padding: 0;
     margin: 0;
@@ -8,4 +14,59 @@ body {
     align-items: center;
     width: 100vw;
     height: 100vh;
+}
+
+.container {
+    width: 800px;
+    max-width: 70%;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+}
+
+#question {
+    color: black;
+    font-size: 1.8rem;
+}
+
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeate(2, auto);
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.btn {
+    --hue: var(--heu-neitral);
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: black;
+    outline: none;
+    cursor: pointer;
+    font-size: 1.4rem;
+}
+
+.btn:hover {
+    border-color: gainsboro;
+
+}
+
+.btn.correct {
+    --hue: var(--hue-correct);
+    background-color: hsl(var(--hue), 100%, 50%);
+    color: black;
+    border: 1px solid hsl(var(--hue), 100%, 50%);
+}
+
+.btn.wrong {
+    --hue: var(--hue-wrong);
+    background-color: hsl(var(--hue), 100%, 50%);
+    color: black;
+}
+
+.start-btn, .next-btn {
+   font-size: 1.5rem;
+   font-weight: bold;
+   padding: 10px 20px;
 }
