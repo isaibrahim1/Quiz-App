@@ -52,6 +52,23 @@ I chose a simple and limited colour palette to avoid overwhelming users
 I have used #fff & #ffff as the primary and secondary colours used for background color.
 I have used #0075ff  submit button, spans and correct answer.
 
+
+## 3. Technologies Used <a name="technologies-used"></a>
+### 3.1. Languages Used <a name="languages-used"></a>
+## Languages Used
+
+* HTML
+* CSS
+* Javascript
+
+## Frameworks, Libraries & Programs Used
+
+* **Balsamiq:** Used to create wireframes.
+* **Github:** To save and store the files for the website.
+* **Google Fonts:** To import the fonts used on the website.
+* **Google Developer Tools:** To troubleshoot and test features, solve issues with responsiveness and styling.
+* **Favicon.io:** To create favicon.
+
 ### 2.2. Typography <a name="typography"></a>
 ### 2.3. Imagery <a name="imagery"></a>
 ### 2.4. Wireframes <a name="wireframes"></a>
