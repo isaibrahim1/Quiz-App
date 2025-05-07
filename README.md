@@ -30,3 +30,18 @@
    6.2. [Content](#content)  
    6.3. [Media](#media)  
    6.4. [Acknowledgments](#acknowledgments)  
+
+## 1. User Experience <a name="user-experience"></a>
+### 1.1. User Stories <a name="user-stories"></a>
+## First Time Visitor Goals
+
+These are the key goals and expectations of first-time users visiting the JavaScript Quiz Game:
+
+-  **Join Fun Quiz Games**  
+  I want to join fun quiz games online and improve my general knowledge anytime, anywhere.
+
+-  **Device Compatibility**  
+  I want the site to work well on my phone, tablet, or computer.
+
+-  **Simple Navigation**  
+  I want the site to be easy to use and simple to move around.
