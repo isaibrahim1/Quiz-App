@@ -1,4 +1,4 @@
-const stratButton = document.getElementById("start-btn")
+const startButton = document.getElementById("start-btn")
 const nextButton = document.getElementById("next-btn")
 const questionContainerElement = document.getElementById("question-container")
 const questionElement = document.getElementById("question")
@@ -7,16 +7,16 @@ const answerButtonsElement = document.getElementById("answer-buttons")
 let shuffledQuestions, currentQuestionIndex
 let score = 0; //initial score
 
-stratButton.addEventListener("click", startGame)
-nextButton.addElement("click", () => {
-    currentQuestionIndex++
-    setNextQuestion()
-})
+startButton.addEventListener("click", startGame)
+nextButton.addEventListener("click", () => {
+    currentQuestionIndex++;
+    setNextQuestion();
+});
 
 //start game function
 function startGame() {
-    stratButton.classList.add("hide");
-    shuffledQuestions = questionContainerElement.ariaSort(() => Math.random() - 0.5); 
+    startButton.classList.add("hide");
+    shuffledQuestions = questions.sort(() => Math.random() - 0.5); 
     currentQuestionIndex = 0;
     score = 0; //reset score when game start
     questionContainerElement.classList.remove("hide"); //hide start button and show question
@@ -30,26 +30,27 @@ function startGame() {
 }
 
 //next question function
-function setNextquestion() {
-    resetstate()
+function setNextQuestion() {
+    resetState()
     showQuestion(shuffledQuestions[currentQuestionIndex]);
+    console.log(shuffledQuestions[currentQuestionIndex]);
 }
 
 function showQuestion(question) {
     questionElement.innerText = question.question
     question.answers.forEach(answer => {
         const button = document.createElement("button")
-        button.innerText = answer.innerText
+        button.innerText = answer.text
         button.classList.add("btn")
         if (answer.correct) {
             button.dataset.correct = answer.correct
         }
-        button.addEventListeneer("click", selectAnswer)
+        button.addEventListener("click", selectAnswer)
         answerButtonsElement.appendChild(button)
     })
 }
 
-//
+
 function resetState() {
     clearStatusClass(document.body)
     nextButton.classList.add("hide")
@@ -57,3 +58,85 @@ function resetState() {
         answerButtonsElement.removeChild(answerButtonsElement.firstChild)
     }
 }
+
+//answer function
+function selectAnswer(e) {
+    const selectedButton = e.target
+    const correct = selectedButton.dataset.correct
+    setStatusClass(document.body, correct)
+    Array.from(answerButtonsElement.children).forEach(button => {
+        setStatusClass(button, button.dataset.correct)
+    })
+
+    if (correct) {
+        score++; //increase score if answer correct
+    }
+
+    if (shuffledQuestions.length > currentQuestionIndex + 1) {
+        nextButton.classList.remove("hide")
+
+    } else {
+        startButton.innerText = "Restart"
+        startButton.classList.remove("hide")
+        showResult(); //show result
+    }
+}
+
+function showResult() {
+    questionContainerElement.classList.add("hide")
+
+    const existingResult = document.getElementById("result");
+    if (existingResult) {
+        existingResult.remove();
+    }
+
+    //create and style result
+    const resultElement = document.createElement("div");
+    resultElement.id = "result";
+    resultElement.innerText = `Your score: ${score} / ${questions.length}`;
+    resultElement.style.marginBottom = "10px";
+    resultElement.style.fontSize = "18px";
+
+    startButton.parentNode.insertBefore(resultElement, startButton);
+
+   
+}
+
+
+//set status correct and wrong function
+function setStatusClass(element, correct) {
+    clearStatusClass(element)
+    if (correct) {
+        element.classList.add("correct")
+    } else {
+        element.classList.add("wrong")
+    }
+
+  
+}
+function clearStatusClass(element) {
+    element.classList.remove("correct")
+    element.classList.remove("wrong")
+}
+
+//question 
+const questions = [
+    {
+        question: "What keyword is used to declare a variable in JavaScript??",
+        answers: [
+            { text: "string", correct: false },
+            { text: "boolean", correct: false },
+            { text: "var", correct: true },
+            { text: "function", correct: false }
+        ]
+    },
+    {
+        question: "Which of the following is NOT a primitive data type in JavaScript?",
+        answers: [
+            { text: "number", correct: false },
+            { text: "object", correct: true },
+            { text: "string", correct: false },
+            { text: "boolean", correct: false }
+        ]
+    }
+]
