@@ -1,4 +1,5 @@
-
+/*google font*/
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
     --hue-neutral: 210;
@@ -94,7 +95,6 @@ body {
         text-align: center;
     }
     .btn-grid {
-        background-color: yellow;
         grid-template-columns: repeat(1, auto);
     }
     .controls {
