@@ -69,13 +69,73 @@ I have used #0075ff  submit button, spans and correct answer.
 * **Google Developer Tools:** To troubleshoot and test features, solve issues with responsiveness and styling.
 * **Favicon.io:** To create favicon.
 
+## 4. Deployment & Local Development <a name="deployment--local-development"></a>
+### 4.1. Deployment <a name="deployment"></a>
+## Deploying with GitHub Pages
+
+**Prerequisites:**
+
+* A GitHub account (sign up if you don't have one).
+* A GitHub repository containing your quiz game project.
+
+**Steps:**
+
+1.  **Login to GitHub:** Go to [https://github.com/login](https://github.com/login) and enter your credentials.
+2.  **Navigate to your Repository:** Open the repository for your JavaScript Quiz Game (e.g., click on the project link).
+3.  **Access Settings:** Click on the **Settings** button located near the top of your repository page.
+4.  **Go to Pages:** In the left-hand navigation menu, scroll down and click on **Pages**.
+5.  **Select Deployment Source:**
+    * Under the "Build and deployment" section, find the **Source** dropdown.
+    * Select **main branch** from the dropdown menu.
+6.  **Save Changes:** Click the **Save** button.
+
+
+### 4.2. Local Development <a name="local-development"></a>
+- **How to Fork** <a name="how-to-fork"></a>
+  **Steps:**
+
+1.  **Login to GitHub:** Go to [https://github.com/login](https://github.com/login) and enter your credentials.
+2.  **Navigate to the Repository:** Open the repository for the JavaScript Quiz Game (e.g., click on the project link).
+3.  **Click the Fork Button:** In the top right corner of the repository page, click the **Fork** button.
+
+
+- **How to Clone** <a name="how-to-clone"></a>
+  ## Cloning the Repository
+
+**Steps:**
+
+1.  **Login to GitHub:** Go to [https://github.com/login](https://github.com/login) and enter your credentials.
+2.  **Navigate to your Repository:** Open the repository for your JavaScript Quiz Game (e.g., click on the project link).
+3.  **Get the Repository Link:**
+    * Click the green **Code** button.
+    * Choose your preferred method (**HTTPS**, **SSH**, or **GitHub CLI**).
+    * Copy the displayed link.
+4.  **Open Terminal/Command Prompt:** Open the terminal or command prompt in your code editor or on your system.
+5.  **Navigate to Destination:** Use the `cd` command to go to the folder where you want to clone the project (e.g., `cd Documents/Projects`).
+6.  **Clone the Repository:**
+    * Type `git clone ` (make sure there's a space after `clone`).
+    * Paste the link you copied in step 3.
+    * Press **Enter**.
+
+
 ### 2.2. Typography <a name="typography"></a>
+Google Fonts was used to import the chosen fonts for use in the site.
+This project uses Google Fonts to enhance the typography and visual appeal of the quiz app. The following fonts have been imported:
+The fonts are imported in the `style.css` file using the `@import` rule:
+
+- **Inconsolata**
+- **Montserrat**
+- **Raleway**
+- **Roboto**
+- **Work Sans**
+
+### How Fonts Are Integrated
 ### 2.3. Imagery <a name="imagery"></a>
+Since the website is named "The Quiz App," I chose not to use an image for the page background. Instead, I opted for a blue color scheme to evoke the atmosphere of a pub quiz.
 ### 2.4. Wireframes <a name="wireframes"></a>
 ### 2.5. Features <a name="features"></a>
 - **The Home Page** <a name="the-home-page"></a>  
 - **The Game Page** <a name="the-game-page"></a>  
 - **The High Scores Page** <a name="the-high-scores-page"></a>  
-- **The 404 Error Page** <a name="the-404-error-page"></a>  
 - **Future Implementations** <a name="future-implementations"></a>  
 ### 2.6. Accessibility <a name="accessibility"></a>
