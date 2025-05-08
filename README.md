@@ -35,10 +35,10 @@
 ### 1.1. User Stories <a name="user-stories"></a>
 ## First Time Visitor Goals
 
-These are the key goals and expectations of first-time users visiting the JavaScript Quiz Game:
+These are the key goals and expectations of first-time users visiting the JavaScript Quiz App:
 
--  **Join Fun Quiz Games**  
-  I want to join fun quiz games online and improve my general knowledge anytime, anywhere.
+-  **Join Fun Quiz App**  
+  I want to join fun quiz App online and improve my general knowledge anytime, anywhere.
 
 -  **Device Compatibility**  
   I want the site to work well on my phone, tablet, or computer.
@@ -76,12 +76,12 @@ I have used #0075ff  submit button, spans and correct answer.
 **Prerequisites:**
 
 * A GitHub account (sign up if you don't have one).
-* A GitHub repository containing your quiz game project.
+* A GitHub repository containing your quiz App project.
 
 **Steps:**
 
 1.  **Login to GitHub:** Go to [https://github.com/login](https://github.com/login) and enter your credentials.
-2.  **Navigate to your Repository:** Open the repository for your JavaScript Quiz Game (e.g., click on the project link).
+2.  **Navigate to your Repository:** Open the repository for your JavaScript Quiz App (e.g., click on the project link).
 3.  **Access Settings:** Click on the **Settings** button located near the top of your repository page.
 4.  **Go to Pages:** In the left-hand navigation menu, scroll down and click on **Pages**.
 5.  **Select Deployment Source:**
@@ -95,7 +95,7 @@ I have used #0075ff  submit button, spans and correct answer.
   **Steps:**
 
 1.  **Login to GitHub:** Go to [https://github.com/login](https://github.com/login) and enter your credentials.
-2.  **Navigate to the Repository:** Open the repository for the JavaScript Quiz Game (e.g., click on the project link).
+2.  **Navigate to the Repository:** Open the repository for the JavaScript Quiz App (e.g., click on the project link).
 3.  **Click the Fork Button:** In the top right corner of the repository page, click the **Fork** button.
 
 
@@ -105,7 +105,7 @@ I have used #0075ff  submit button, spans and correct answer.
 **Steps:**
 
 1.  **Login to GitHub:** Go to [https://github.com/login](https://github.com/login) and enter your credentials.
-2.  **Navigate to your Repository:** Open the repository for your JavaScript Quiz Game (e.g., click on the project link).
+2.  **Navigate to your Repository:** Open the repository for your JavaScript Quiz App (e.g., click on the project link).
 3.  **Get the Repository Link:**
     * Click the green **Code** button.
     * Choose your preferred method (**HTTPS**, **SSH**, or **GitHub CLI**).
@@ -117,6 +117,16 @@ I have used #0075ff  submit button, spans and correct answer.
     * Paste the link you copied in step 3.
     * Press **Enter**.
 
+
+### Testing
+| **Feature**              | **Expected Outcome**                              | **Testing Performed**                     | **Result**                          | **Pass/Fail** |
+|---------------------------|--------------------------------------------------|------------------------------------------|-------------------------------------|---------------|
+| **Start Button**          | Starts the quiz and hides the start button       | Clicked "Start" button                   | Quiz started, start button hidden   | **Pass**      |
+| **Next Button**           | Moves to the next question                       | Clicked "Next" button after answering    | Moved to the next question          | **Pass**      |
+| **Button Hover Effects**  | Buttons change style on hover                    | Hovered over buttons                     | Hover effects observed               | **Pass**      |
+| **Mobile Responsiveness** | Page adapts correctly to mobile screen sizes     | Tested on mobile & resized browser window| Layout responds well to screen size | **Pass**      |
+| **Page Load Speed**       | Loads within 7 seconds                           | Opened the quiz app                      | Loaded quickly                       | **Pass**      |
+| **HTML Validation**       | HTML markup is valid                             | Checked in HTML validator                | Valid – no major issues              | **Pass**      |
 
 ### 2.2. Typography <a name="typography"></a>
 Google Fonts was used to import the chosen fonts for use in the site.
