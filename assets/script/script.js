@@ -122,7 +122,7 @@ function clearStatusClass(element) {
 //question 
 const questions = [
     {
-        question: "What keyword is used to declare a variable in JavaScript??",
+        question: "1- What keyword is used to declare a variable in JavaScript??",
         answers: [
             { text: "string", correct: false },
             { text: "boolean", correct: false },
@@ -131,7 +131,7 @@ const questions = [
         ]
     },
     {
-        question: "Which of the following is NOT a primitive data type in JavaScript?",
+        question: "2- Which of the following is NOT a primitive data type in JavaScript?",
         answers: [
             { text: "number", correct: false },
             { text: "object", correct: true },
