@@ -144,8 +144,42 @@ The fonts are imported in the `style.css` file using the `@import` rule:
 Since the website is named "The Quiz App," I chose not to use an image for the page background. Instead, I opted for a blue color scheme to evoke the atmosphere of a pub quiz.
 ### 2.4. Wireframes <a name="wireframes"></a>
 ### 2.5. Features <a name="features"></a>
-- **The Home Page** <a name="the-home-page"></a>  
-- **The Game Page** <a name="the-game-page"></a>  
-- **The High Scores Page** <a name="the-high-scores-page"></a>  
+- **The Game Page** <a name="the-game-page"></a>
+![The Game Page](https://github.com/isaibrahim1/Quiz-App/blob/main/assets/documentation/the%20game%20page.jpeg?raw=true)  
+  
+- **The High Scores Page** <a name="the-high-scores-page"></a>
+![The High Scores Pag](https://github.com/isaibrahim1/Quiz-App/blob/main/assets/documentation/the%20high%20score%20page.png?raw=true)
 - **Future Implementations** <a name="future-implementations"></a>  
 ### 2.6. Accessibility <a name="accessibility"></a>
+"I have prioritized accessibility throughout the development process to ensure the website is as user-friendly as possible. 
+* Using semantic HTML.
+* Using a hover state on all buttons on the site to make it clear to the user if they are hovering over a button.
+* Choosing a Montserrat font for the site - these fonts are suitable for people with dyslexia.
+* Ensuring that there is a sufficient colour contrast throughout the site.
+* 
+ **Contrast Button**  
+  ![Contrast Button](https://github.com/isaibrahim1/Quiz-App/blob/main/assets/documentation/accessibility2.png?raw=true)  
+
+- **Contrast Button (Hover State)**  
+  ![Contrast Button Hover](https://github.com/isaibrahim1/Quiz-App/blob/main/assets/documentation/accessibility.png?raw=true)  
+
+- **Contrast Text**  
+  ![Contrast Text](https://github.com/isaibrahim1/Quiz-App/blob/main/assets/documentation/accessibility1.png?raw=true)
+
+  ## Credits
+
+### Code Used
+
+* I used [this You Tube tutorial](https://www.youtube.com/watch?v=riDzcEQbX6k&t=601s) to create the project, and I add some change qquestion,mediaquery and style.
+
+
+ ### Content
+
+All questions for my site were pulled from [Google gemini](https://gemini.google.com/app). 
+
+### Acknowledgments
+
+I would like to acknowledge the following people:
+
+* jubril_mentor - My Code Institute Mentor.
+* The Code Institute Slack - Thank you to everyone who took the time to play the quiz and look over the code.
