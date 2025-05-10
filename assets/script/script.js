@@ -19,7 +19,7 @@ function startGame() {
     shuffledQuestions = questions.sort(() => Math.random() - 0.5); 
     currentQuestionIndex = 0;
     score = 0; //reset score when game start
-    questionContainerElement.classList.remove("hide"); //hide start button and show question
+    questionContainerElement.classList.remove("hide"); //hide start button and show
 
     const existingResult = document.getElementById("result");
     if (existingResult) {
