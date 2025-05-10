@@ -28,6 +28,10 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
 }
 
+h1 {
+    text-align: center;
+    border-bottom: 1px solid hsl(var(--hue), 100%, 30%);
+}
 #question {
     color: black;
     font-size: 1.8rem;

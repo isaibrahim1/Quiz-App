@@ -122,7 +122,7 @@ function clearStatusClass(element) {
 //question 
 const questions = [
     {
-        question: "1- What keyword is used to declare a variable in JavaScript??",
+        question: " What keyword is used to declare a variable in JavaScript??",
         answers: [
             { text: "string", correct: false },
             { text: "boolean", correct: false },
@@ -131,12 +131,57 @@ const questions = [
         ]
     },
     {
-        question: "2- Which of the following is NOT a primitive data type in JavaScript?",
+        question: " Which of the following is NOT a primitive data type in JavaScript?",
         answers: [
             { text: "number", correct: false },
             { text: "object", correct: true },
             { text: "string", correct: false },
             { text: "boolean", correct: false }
+        ]
+    },
+    {
+        "question": " What is the output of the following JavaScript code?\n\n```javascript\nlet x = 5;\nconsole.log(x++);\n```",
+        "answers": [
+            { "text": "5", "correct": true },
+            { "text": "6", "correct": false },
+            { "text": "undefined", "correct": false },
+            { "text": "Error", "correct": false }
+        ]
+    },
+    {
+        "question": " Which of the following is the correct way to declare a constant in JavaScript?",
+        "answers": [
+            { "text": "variable PI = 3.14;", "correct": false },
+            { "text": "const PI = 3.14;", "correct": true },
+            { "text": "let PI = 3.14;", "correct": false },
+            { "text": "final PI = 3.14;", "correct": false }
+        ]
+    },
+    {
+        "question": " What does the 'typeof' operator in JavaScript return for an array?",
+        "answers": [
+            { "text": "array", "correct": false },
+            { "text": "object", "correct": true },
+            { "text": "Array", "correct": false },
+            { "text": "list", "correct": false }
+        ]
+    },
+    {
+        "question": " Which of the following array methods adds new elements to the end of an array and returns the new length of the array?",
+        "answers": [
+            { "text": "push()", "correct": true },
+            { "text": "pop()", "correct": false },
+            { "text": "shift()", "correct": false },
+            { "text": "unshift()", "correct": false }
+        ]
+    },
+    {
+        "question": " What will be the value of 'y' after the following JavaScript code is executed?\n\n```javascript\nlet x = 10;\nlet y = x === '10';\n```",
+        "answers": [
+            { "text": "10", "correct": false },
+            { "text": "\"10\"", "correct": false },
+            { "text": "true", "correct": false },
+            { "text": "false", "correct": true }
         ]
     }
 ]
