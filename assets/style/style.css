@@ -19,7 +19,7 @@ body {
     height: 100vh;
 }
 
-.container {
+.main-container {
     width: 800px;
     max-width: 70%;
     background-color: white;
@@ -90,7 +90,7 @@ h1 {
 }
 
 @media (max-width: 600px) {
-    .container {
+    .main-container {
         width: 100%;
 
     }
