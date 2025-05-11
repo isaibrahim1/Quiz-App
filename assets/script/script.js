@@ -98,7 +98,7 @@ function selectAnswer(e) {
         nextButton.classList.remove("hide");
 
     } else {
-        startButton.innerText = "Restart";
+        startButton.innerText = "Play Again";
         startButton.classList.remove("hide");
         showResult(); //show result
     }
