@@ -39,7 +39,7 @@ h1 {
 .count {
     color: black;
     font-size: 1.3rem;
-    float: right;
+    text-align: right;
     margin-top: 130px;
 }
 .btn-grid {
