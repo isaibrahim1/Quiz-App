@@ -196,7 +196,7 @@ const questions = [
             { "text": "shift()", "correct": false },
             { "text": "unshift()", "correct": false }
         ]
-    },
+    }, 
     {
         "question": " What will be the value of 'y' after the following JavaScript code is executed?\n\n```javascript\nlet x = 10;\nlet y = x === '10';\n```",
         "answers": [
