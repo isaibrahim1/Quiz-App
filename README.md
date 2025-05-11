@@ -153,9 +153,9 @@ Since the website is named "The Quiz App," I chose not to use an image for the p
 ### 2.5. Features <a name="features"></a>
 - **The Game Page** <a name="the-game-page"></a>
 * A favicon in the browser tab.
+![The High Scores Pag](https://github.com/isaibrahim1/Quiz-App/blob/main/assets/testing/favicon.jpg?raw=true)
 
-
-![The High Scores Pag](https://github.com/isaibrahim1/Quiz-App/blob/main/assets/testing/select%20answer.png?raw=true)
+![Selected Answers](https://github.com/isaibrahim1/Quiz-App/blob/main/assets/testing/select%20answer.png?raw=true)
 * Once a user makes a selection, they cannot choose again. Visual feedback will immediately show if their answer is right or wrong: the quiz border and selected button will turn green for correct answers and red for incorrect ones. Correct answers add 10 points to their score. Tapping "Next" will move them to the subsequent question, updating the question number. In case of a wrong answer, the button they picked will be red, while the correct option will be clearly shown in green.
 
   
