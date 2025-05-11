@@ -4,7 +4,14 @@ const questionContainerElement = document.getElementById("question-container")
 const questionElement = document.getElementById("question")
 const answerButtonsElement = document.getElementById("answer-buttons")
 
-let shuffledQuestions, currentQuestionIndex
+//add a new question couter
+const questionCountElement = document.createElement("div");
+questionCountElement.id = "question-count";
+questionCountElement.style.marginBottom = "10px";
+questionCountElement.style.fontSize = "16px";
+questionContainerElement.insertBefore(questionCountElement, questionElement);
+
+let shuffledQuestions, currentQuestionIndex;
 let score = 0; //initial score
 
 startButton.addEventListener("click", startGame)
@@ -13,6 +20,18 @@ nextButton.addEventListener("click", () => {
     setNextQuestion();
 });
 
+//get total number of questions
+function getQuestionCount() {
+    return questions.length;
+}
+
+//display current question number annd totla question number
+function displayQuestionCount() {
+    if (questionCountElement) {
+        questionCountElement.textContent = `Question ${currentQuestionIndex + 1} of ${getQuestionCount()}`;
+        // console.log(`Question Count Updated: Question ${currentQuestionIndex + 1} of ${getQuestionCount()}`);
+    }
+}
 //start game function
 function startGame() {
     startButton.classList.add("hide");
@@ -26,14 +45,17 @@ function startGame() {
         existingResult.remove();
     }
 
+     //display question count
+    displayQuestionCount();
     setNextQuestion();
+   
 }
 
 //next question function
 function setNextQuestion() {
     resetState()
     showQuestion(shuffledQuestions[currentQuestionIndex]);
-    console.log(shuffledQuestions[currentQuestionIndex]);
+    displayQuestionCount(); //update question count
 }
 
 function showQuestion(question) {

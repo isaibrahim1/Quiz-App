@@ -36,7 +36,12 @@ h1 {
     color: black;
     font-size: 1.8rem;
 }
-
+.question-count {
+    color: black;
+    font-size: 1.3rem;
+    float: right;
+    margin-top: 130px;
+}
 .btn-grid {
     display: grid;
     grid-template-columns: repeat(2, auto);
