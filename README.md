@@ -139,6 +139,9 @@ Since the website is named "The Quiz App," I chose not to use an image for the p
 
 
 ### Testing
+
+Please refer to [TESTING.MD](TESTING.md) file for all texting carried out.
+
 | **Feature**              | **Expected Outcome**                              | **Testing Performed**                     | **Result**                          | **Pass/Fail** |
 |---------------------------|--------------------------------------------------|------------------------------------------|-------------------------------------|---------------|
 | **Start Button**          | Starts the quiz and hides the start button       | Clicked "Start" button                   | Quiz started, start button hidden   | **Pass**      |
