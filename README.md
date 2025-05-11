@@ -152,7 +152,22 @@ Please refer to [TESTING.MD](TESTING.md) file for all texting carried out.
 | **HTML Validation**       | HTML markup is valid                             | Checked in HTML validator                | Valid – no major issues              | **Pass**      |
 
 
+- ## Validator Testing 
+    - ## HTML
+     ![HTML VALIDATION](https://github.com/isaibrahim1/Quiz-App/blob/main/assets/documentation/htmlvalidation.png?)
+  - ## Css 
+    ![CSS VALIDATION](https://github.com/isaibrahim1/Quiz-App/blob/main/assets/documentation/cssvalidation.png?raw=true)
+
+  - ## Javascript
+    ![CSS VALIDATION](https://github.com/isaibrahim1/Quiz-App/blob/main/assets/documentation/javascriptvalidation.png?raw=true)
+
 ### 2.4. Wireframes <a name="wireframes"></a>
+* Wireframes were created for mobile, tablet and desktop using balsamiq.
+![Question Pag](https://github.com/isaibrahim1/Quiz-App/blob/main/assets/documentation/Desktop.png?raw=true)
+![Question Pag](https://github.com/isaibrahim1/Quiz-App/blob/main/assets/documentation/Tablet.png?raw=true)
+![Question Pag](https://github.com/isaibrahim1/Quiz-App/blob/main/assets/documentation/mbile.png?raw=true)
+![The High Scores Pag](https://github.com/isaibrahim1/Quiz-App/blob/main/assets/documentation/Mobile%202.png?raw=true)
+  
 ### 2.5. Features <a name="features"></a>
 - **The Game Page** <a name="the-game-page"></a>
 * A favicon in the browser tab.
