@@ -57,6 +57,21 @@ I chose a simple and limited colour palette to avoid overwhelming users
 I have used #fff & #ffff as the primary and secondary colours used for background color.
 I have used #0075ff  submit button, spans and correct answer.
 
+### 2.2. Typography <a name="typography"></a>
+Google Fonts was used to import the chosen fonts for use in the site.
+This project uses Google Fonts to enhance the typography and visual appeal of the quiz app. The following fonts have been imported:
+The fonts are imported in the `style.css` file using the `@import` rule:
+
+- **Inconsolata**
+- **Montserrat**
+- **Raleway**
+- **Roboto**
+- **Work Sans**
+
+### How Fonts Are Integrated
+### 2.3. Imagery <a name="imagery"></a>
+Since the website is named "The Quiz App," I chose not to use an image for the page background. Instead, I opted for a blue color scheme to evoke the atmosphere of a pub quiz.
+
 
 ## 3. Technologies Used <a name="technologies-used"></a>
 ### 3.1. Languages Used <a name="languages-used"></a>
@@ -124,6 +139,9 @@ I have used #0075ff  submit button, spans and correct answer.
 
 
 ### Testing
+
+Please refer to [TESTING.MD](TESTING.md) file for all texting carried out.
+
 | **Feature**              | **Expected Outcome**                              | **Testing Performed**                     | **Result**                          | **Pass/Fail** |
 |---------------------------|--------------------------------------------------|------------------------------------------|-------------------------------------|---------------|
 | **Start Button**          | Starts the quiz and hides the start button       | Clicked "Start" button                   | Quiz started, start button hidden   | **Pass**      |
@@ -133,27 +151,20 @@ I have used #0075ff  submit button, spans and correct answer.
 | **Page Load Speed**       | Loads within 7 seconds                           | Opened the quiz app                      | Loaded quickly                       | **Pass**      |
 | **HTML Validation**       | HTML markup is valid                             | Checked in HTML validator                | Valid – no major issues              | **Pass**      |
 
-### 2.2. Typography <a name="typography"></a>
-Google Fonts was used to import the chosen fonts for use in the site.
-This project uses Google Fonts to enhance the typography and visual appeal of the quiz app. The following fonts have been imported:
-The fonts are imported in the `style.css` file using the `@import` rule:
 
-- **Inconsolata**
-- **Montserrat**
-- **Raleway**
-- **Roboto**
-- **Work Sans**
-
-### How Fonts Are Integrated
-### 2.3. Imagery <a name="imagery"></a>
-Since the website is named "The Quiz App," I chose not to use an image for the page background. Instead, I opted for a blue color scheme to evoke the atmosphere of a pub quiz.
 ### 2.4. Wireframes <a name="wireframes"></a>
 ### 2.5. Features <a name="features"></a>
 - **The Game Page** <a name="the-game-page"></a>
-![The Game Page](https://github.com/isaibrahim1/Quiz-App/blob/main/assets/documentation/the%20game%20page.jpeg?raw=true)  
+* A favicon in the browser tab.
+![The High Scores Pag](https://github.com/isaibrahim1/Quiz-App/blob/main/assets/testing/favicon.jpg?raw=true)
+
+![Selected Answers](https://github.com/isaibrahim1/Quiz-App/blob/main/assets/testing/select%20answer.png?raw=true)
+* Once a user makes a selection, they cannot choose again. Visual feedback will immediately show if their answer is right or wrong: the quiz border and selected button will turn green for correct answers and red for incorrect ones. Correct answers add 10 points to their score. Tapping "Next" will move them to the subsequent question, updating the question number. In case of a wrong answer, the button they picked will be red, while the correct option will be clearly shown in green.
+
   
 - **The High Scores Page** <a name="the-high-scores-page"></a>
-![The High Scores Pag](https://github.com/isaibrahim1/Quiz-App/blob/main/assets/documentation/the%20high%20score%20page.png?raw=true)
+![The High Scores Pag](https://github.com/isaibrahim1/Quiz-App/blob/main/assets/testing/score%20page.png?raw=true)
+* The high scores page title shows the site name. Two "Play Again" buttons appear below the high scores
 - **Future Implementations** <a name="future-implementations"></a>  
 ### 2.6. Accessibility <a name="accessibility"></a>
 "I have prioritized accessibility throughout the development process to ensure the website is as user-friendly as possible. 
