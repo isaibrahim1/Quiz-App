@@ -1,8 +1,8 @@
-const startButton = document.getElementById("start-btn")
-const nextButton = document.getElementById("next-btn")
-const questionContainerElement = document.getElementById("question-container")
-const questionElement = document.getElementById("question")
-const answerButtonsElement = document.getElementById("answer-buttons")
+const startButton = document.getElementById("start-btn");
+const nextButton = document.getElementById("next-btn");
+const questionContainerElement = document.getElementById("question-container");
+const questionElement = document.getElementById("question");
+const answerButtonsElement = document.getElementById("answer-buttons");
 
 //add a new question couter
 const questionCountElement = document.createElement("div");
@@ -11,13 +11,13 @@ questionCountElement.style.marginBottom = "10px";
 questionCountElement.style.fontSize = "16px";
 questionContainerElement.insertBefore(questionCountElement, questionElement);
 
-let shuffledQuestions, currentQuestionIndex;
-let score = 0; //initial score
+let shuffledQuestions, currentQuestionIndex;//shuffled question
+let score = 0; //initial score 
 
-startButton.addEventListener("click", startGame)
+startButton.addEventListener("click", startGame);
 nextButton.addEventListener("click", () => {
     currentQuestionIndex++;
-    setNextQuestion();
+    setNextQuestion(); //setnext question
 });
 
 //get total number of questions
@@ -53,59 +53,59 @@ function startGame() {
 
 //next question function
 function setNextQuestion() {
-    resetState()
+    resetState();
     showQuestion(shuffledQuestions[currentQuestionIndex]);
     displayQuestionCount(); //update question count
 }
 
 function showQuestion(question) {
-    questionElement.innerText = question.question
+    questionElement.innerText = question.question;
     question.answers.forEach(answer => {
-        const button = document.createElement("button")
-        button.innerText = answer.text
-        button.classList.add("btn")
+        const button = document.createElement("button");
+        button.innerText = answer.text;
+        button.classList.add("btn");
         if (answer.correct) {
-            button.dataset.correct = answer.correct
+            button.dataset.correct = answer.correct;
         }
-        button.addEventListener("click", selectAnswer)
-        answerButtonsElement.appendChild(button)
-    })
+        button.addEventListener("click", selectAnswer);
+        answerButtonsElement.appendChild(button);
+    });
 }
 
 
 function resetState() {
-    clearStatusClass(document.body)
-    nextButton.classList.add("hide")
+    clearStatusClass(document.body);
+    nextButton.classList.add("hide");
     while (answerButtonsElement.firstChild) {
-        answerButtonsElement.removeChild(answerButtonsElement.firstChild)
+        answerButtonsElement.removeChild(answerButtonsElement.firstChild);
     }
 }
 
 //answer function
 function selectAnswer(e) {
     const selectedButton = e.target
-    const correct = selectedButton.dataset.correct
-    setStatusClass(document.body, correct)
+    const correct = selectedButton.dataset.correct;
+    setStatusClass(document.body, correct);
     Array.from(answerButtonsElement.children).forEach(button => {
-        setStatusClass(button, button.dataset.correct)
-    })
+        setStatusClass(button, button.dataset.correct);
+    });
 
     if (correct) {
         score++; //increase score if answer correct
     }
 
     if (shuffledQuestions.length > currentQuestionIndex + 1) {
-        nextButton.classList.remove("hide")
+        nextButton.classList.remove("hide");
 
     } else {
-        startButton.innerText = "Restart"
-        startButton.classList.remove("hide")
+        startButton.innerText = "Restart";
+        startButton.classList.remove("hide");
         showResult(); //show result
     }
 }
 
 function showResult() {
-    questionContainerElement.classList.add("hide")
+    questionContainerElement.classList.add("hide");
 
     const existingResult = document.getElementById("result");
     if (existingResult) {
@@ -127,18 +127,18 @@ function showResult() {
 
 //set status correct and wrong function
 function setStatusClass(element, correct) {
-    clearStatusClass(element)
+    clearStatusClass(element);
     if (correct) {
-        element.classList.add("correct")
+        element.classList.add("correct");
     } else {
-        element.classList.add("wrong")
+        element.classList.add("wrong");
     }
 
   
 }
 function clearStatusClass(element) {
-    element.classList.remove("correct")
-    element.classList.remove("wrong")
+    element.classList.remove("correct");
+    element.classList.remove("wrong");
 }
 
 //question 
@@ -206,4 +206,4 @@ const questions = [
             { "text": "false", "correct": true }
         ]
     }
-]
+];
