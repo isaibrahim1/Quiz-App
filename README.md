@@ -154,7 +154,7 @@ Please refer to [TESTING.MD](TESTING.md) file for all texting carried out.
 
 - ## Validator Testing 
     - ## HTML
-     ![HTML VALIDATION](https://github.com/isaibrahim1/Quiz-App/blob/main/assets/documentation/htmlvalidation.png?)
+     ![HTML VALIDATION](https://github.com/isaibrahim1/Quiz-App/blob/main/assets/documentation/htmlvalidation.png?raw=true)
   - ## Css 
     ![CSS VALIDATION](https://github.com/isaibrahim1/Quiz-App/blob/main/assets/documentation/cssvalidation.png?raw=true)
 
