@@ -164,7 +164,7 @@ Please refer to [TESTING.MD](TESTING.md) file for all texting carried out.
     ![CSS VALIDATION](https://github.com/isaibrahim1/Quiz-App/blob/main/assets/documentation/cssvalidation.png?raw=true)
 
   - ## Javascript
-    ![CSS VALIDATION](https://github.com/isaibrahim1/Quiz-App/blob/main/assets/documentation/javascriptvalidation.png?raw=true)
+    ![CSS VALIDATION](https://github.com/isaibrahim1/Quiz-App/blob/main/assets/documentation/jsvalidation.png?raw=true)
 
 ### 2.4. Wireframes <a name="wireframes"></a>
 * Wireframes were created for mobile, tablet and desktop using balsamiq.
