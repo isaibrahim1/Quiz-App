@@ -1,8 +1,10 @@
-# Quiz-App
+## Quiz-App
+ 
 
 ![The Quiz App](https://github.com/isaibrahim1/Quiz-App/blob/main/assets/documentation/start%20game.png?raw=true)
 
 ![The Quiz App](https://github.com/isaibrahim1/Quiz-App/blob/main/assets/documentation/question%20page.jpeg?raw=true)
+Visit the deployed site: [Quiz App](https://isaibrahim1.github.io/Quiz-App/)
 
 ## 📑 Table of Contents
 1. [User Experience](#user-experience)  
@@ -16,7 +18,6 @@
       - [The Home Page](#the-home-page)  
       - [The Game Page](#the-game-page)  
       - [The High Scores Page](#the-high-scores-page)  
-      - [The 404 Error Page](#the-404-error-page)  
       - [Future Implementations](#future-implementations)  
    2.6. [Accessibility](#accessibility)  
 3. [Technologies Used](#technologies-used)  
@@ -28,8 +29,6 @@
       - [How to Fork](#how-to-fork)  
       - [How to Clone](#how-to-clone)  
 5. [Testing](#testing)  
-   5.1. [Solved Bugs](#solved-bugs)  
-   5.2. [Known Bugs](#known-bugs)  
 6. [Credits](#credits)  
    6.1. [Code Used](#code-used)  
    6.2. [Content](#content)  
@@ -83,11 +82,12 @@ Since the website is named "The Quiz App," I chose not to use an image for the p
 
 ## Frameworks, Libraries & Programs Used
 
-* **Balsamiq:** Used to create wireframes.
-* **Github:** To save and store the files for the website.
-* **Google Fonts:** To import the fonts used on the website.
-* **Google Developer Tools:** To troubleshoot and test features, solve issues with responsiveness and styling.
-* **Favicon.io:** To create favicon.
+* [Balsamiq](https://balsamiq.com/) Used to create wireframes.
+* [Github](https://github.com/) To save and store the files for the website.
+* [Google Fonts](https://fonts.google.com/) To import the fonts used on the website.
+* [Google Developer Tools](https://developers.google.com/web/tools) To troubleshoot and test features, solve issues with responsiveness and styling.
+* [Favicon.io](https://www.flaticon.com/) To create favicon.
+* [jQuery](https://jquery.com/) - A JavaScript library.
 
 ## 4. Deployment & Local Development <a name="deployment--local-development"></a>
 ### 4.1. Deployment <a name="deployment"></a>
